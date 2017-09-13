@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <title>生鲜港 APP</title>
+</head>
+<style>
+    .container {
+        max-width: 800px;
+        margin-top: 20px;
+        padding: 20px;
+        border: 1px solid #ddd;
+    }
+
+    .tab-header {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .tab-content {
+        margin-top: 20px;
+    }
+
+    button {
+        background: transparent;
+        border: none;
+        text-decoration: underline;
+        padding: 0;
+        text-align: right;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active">
+                <a href="#fresh-ios" aria-controls="fresh" role="tab" data-toggle="tab">
+                    <div class="tab-header">生鲜港</div>
+                </a>
+            </li>
+            <li role="presentation">
+                <a href="#fruit" aria-controls="fruit" role="tab" data-toggle="tab">
+                    <div class="tab-header">水果通</div>
+                </a>
+        </ul>
+
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="fresh-ios">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <h3 class="panel-title col-md-6">
+                                <img src="./img/ios.png" />
+                                <span style="vertical-align: middle">生鲜港</span>
+                            </h3>
+                            <button class="col-md-6" type="button" data-toggle="collapse" data-target="#fresh-ios-collapse" aria-expanded="false" aria-controls="fresh-ios-collapse">预览用APP</button>
+                        </div>
+                    </div>
+                    <div class="panel-body row">
+                        <div class="col-md-6" style="text-align: center">
+                            <a href=""><img style="height: 100px;width: 100px" src="./img/down.png" alt="下载生鲜港 iOS App"></a>
+                        </div>
+                        <div class="col-md-6" style="text-align: center">
+                            <img style="height: 100px;width: 100px" src="./img/preview.png" /></div>
+                    </div>
+                </div>
+                <div class="collapse" id="fresh-ios-collapse">
+                    <div class="panel panel-warning">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                <img src="./img/ios.png" />
+                                <span style="vertical-align: middle">生鲜港(测试)</span>
+                            </h3>
+                        </div>
+                        <div class="panel-body row">
+                            <div class="col-md-6" style="text-align: center">
+                                <a href=""><img style="height: 100px;width: 100px" src="./img/down.png" alt="下载生鲜港 iOS 预览 App"></a>
+                            </div>
+                            <div class="col-md-6" style="text-align: center">
+                                <img style="height: 100px;width: 100px" src="./img/preview.png" /></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <h3 class="panel-title col-md-6">
+                                <img src="./img/android.png" />
+                                <span style="vertical-align: middle">生鲜港</span>
+                            </h3>
+                            <button class="col-md-6" type="button" data-toggle="collapse" data-target="#fresh-android-collapse" aria-expanded="false"
+                                aria-controls="fresh-android-collapse">预览用APP</button>
+                        </div>
+                    </div>
+                    <div class="panel-body row">
+                        <div class="col-md-6" style="text-align: center">
+                            <a href=""><img style="height: 100px;width: 100px" src="./img/down.png" alt="下载生鲜港 android App"></a>
+                        </div>
+                        <div class="col-md-6" style="text-align: center">
+                            <img style="height: 100px;width: 100px" src="./img/preview.png" /></div>
+                    </div>
+                </div>
+                <div class="collapse" id="fresh-android-collapse">
+                    <div class="panel panel-warning">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                <img src="./img/android.png" />
+                                <span style="vertical-align: middle">生鲜港(测试)</span>
+                            </h3>
+                        </div>
+                        <div class="panel-body row">
+                            <div class="col-md-6" style="text-align: center">
+                                <a href=""><img style="height: 100px;width: 100px" src="./img/down.png" alt="下载生鲜港 iOS 预览 App"></a>
+                            </div>
+                            <div class="col-md-6" style="text-align: center">
+                                <img style="height: 100px;width: 100px" src="./img/preview.png" /></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div role="tabpanel" class="tab-pane" id="fruit">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <h3 class="panel-title col-md-6">
+                                <img src="./img/ios.png" />
+                                <span style="vertical-align: middle">水果通</span>
+                            </h3>
+                            <button class="col-md-6" type="button" data-toggle="collapse" data-target="#fruit-ios-collapse" aria-expanded="false" aria-controls="fruit-ios-collapse">预览用APP</button>
+                        </div>
+                    </div>
+                    <div class="panel-body row">
+                        <div class="col-md-6" style="text-align: center">
+                            <a href=""><img style="height: 100px;width: 100px" src="./img/down.png" alt="下载水果通 iOS App"></a>
+                        </div>
+                        <div class="col-md-6" style="text-align: center">
+                            <img style="height: 100px;width: 100px" src="./img/preview.png" /></div>
+                    </div>
+                </div>
+                <div class="collapse" id="fruit-ios-collapse">
+                    <div class="panel panel-warning">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                <img src="./img/ios.png" />
+                                <span style="vertical-align: middle">水果通(测试)</span>
+                            </h3>
+                        </div>
+                        <div class="panel-body row">
+                            <div class="col-md-6" style="text-align: center">
+                                <a href=""><img style="height: 100px;width: 100px" src="./img/down.png" alt="下载水果通 iOS 预览 App"></a>
+                            </div>
+                            <div class="col-md-6" style="text-align: center">
+                                <img style="height: 100px;width: 100px" src="./img/preview.png" /></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <h3 class="panel-title col-md-6">
+                                <img src="./img/android.png" />
+                                <span style="vertical-align: middle">水果通</span>
+                            </h3>
+                            <button class="col-md-6" type="button" data-toggle="collapse" data-target="#fruit-android-collapse" aria-expanded="false"
+                                aria-controls="fruit-android-collapse">预览用APP</button>
+                        </div>
+                    </div>
+                    <div class="panel-body row">
+                        <div class="col-md-6" style="text-align: center">
+                            <a href=""><img style="height: 100px;width: 100px" src="./img/down.png" alt="下载水果通 android App"></a>
+                        </div>
+                        <div class="col-md-6" style="text-align: center">
+                            <img style="height: 100px;width: 100px" src="./img/preview.png" /></div>
+                    </div>
+                </div>
+                <div class="collapse" id="fruit-android-collapse">
+                    <div class="panel panel-warning">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                <img src="./img/android.png" />
+                                <span style="vertical-align: middle">水果通(测试)</span>
+                            </h3>
+                        </div>
+                        <div class="panel-body row">
+                            <div class="col-md-6" style="text-align: center">
+                                <a href=""><img style="height: 100px;width: 100px" src="./img/down.png" alt="下载水果通 iOS 预览 App"></a>
+                            </div>
+                            <div class="col-md-6" style="text-align: center">
+                                <img style="height: 100px;width: 100px" src="./img/preview.png" /></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script>
+        $(document).ready(function () {
+            $('ul a').click(function (e) {
+                e.preventDefault()
+                $(this).tab('show')
+            })
+        })
+    </script>
+</body>
+
+</html>
