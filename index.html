@@ -253,12 +253,12 @@
                 $(this).tab('show')
             })
 
-            var autoInstall = getUrlParameter('auto_install');
+            var autoInstall = getUrlParameter('in');
             if (autoInstall === 'fruit') {
                 $("body").hide()
                 var href = $("#fruit-ipa").attr("href")
                 window.location.href = href;
-            } else if (autoInstall === 'fruit-preivew') {
+            } else if (autoInstall === 'fruitp') {
                 $("body").hide()
                 var href = $("#fruit-preview-ipa").attr("href")
                 window.location.href = href;
